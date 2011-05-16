@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20110516033035) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "logo"
     t.integer  "position"
   end
 

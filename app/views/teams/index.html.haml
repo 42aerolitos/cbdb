@@ -8,7 +8,7 @@
   - @teams.each do |team|
     %tr
       %td= team.position
-      %td= image_tag '/images/logos/'+team.file_name+".jpg", :height => 25, :alt => team.name, :id => team.file_name
+      %td= image_tag '/images/logos/'+team.file_name+".png", :height => 60, :alt => team.name, :id => team.file_name
       %td= team.name
       %td= link_to 'Show', team
       %td= link_to 'Edit', edit_team_path(team)
