@@ -1,0 +1,22 @@
+%h1 Listing blogs
+%table
+  %tr
+    %th
+    %th Name
+    %th Url
+    %th Time
+    %th
+    %th
+    %th
+  - @blogs.each do |blog|
+    %tr
+      %td= image_tag '/images/logos/'+blog.team_file_name+".jpg", :height => 25, :alt => blog.team_name, :id => blog.team_file_name
+      %td= blog.name
+      %td= blog.url
+      %td= blog.team_name
+      %td= link_to blog.firstFeed.title, blog.firstFeed.url
+      %td= link_to 'Show', blog
+      %td= link_to 'Edit', edit_blog_path(blog)
+      %td= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete
+%br/
+= link_to 'New Blog', new_blog_path

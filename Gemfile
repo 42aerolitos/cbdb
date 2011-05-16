@@ -9,7 +9,7 @@ gem 'sqlite3'
 gem 'haml'
 gem 'simple_form'
 
-gem 'feedtools'
+gem 'feedzirra'
 
 # Use unicorn as the web server
 # gem 'unicorn'
