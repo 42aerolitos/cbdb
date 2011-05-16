@@ -1,4 +1,8 @@
 Cbdb::Application.routes.draw do
+  get "home/index"
+
+  resources :posts
+
   resources :teams
 
   resources :blogs

@@ -1,0 +1,17 @@
+%h1 Brasileirão 2011
+%table
+  %tr
+    %th P
+    %th
+    %th Time
+    %th Blog
+  - @blogs.each do |blog|
+    %tr
+      %td= blog.team_position
+      %td= image_tag '/images/logos/'+blog.team_file_name+".jpg", :height => 25, :alt => blog.team_name, :id => blog.team_file_name
+      %td= blog.team_name
+      %td
+        %div
+          %h3= blog.name
+          = link_to blog.firstFeed.title, blog.firstFeed.url
+%br/

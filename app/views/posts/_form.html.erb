@@ -1,0 +1,12 @@
+<%= simple_form_for(@post) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :title %>
+    <%= f.input :url %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

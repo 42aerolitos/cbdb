@@ -10,6 +10,7 @@
     %th
   - @blogs.each do |blog|
     %tr
+      %td= blog.team_position
       %td= image_tag '/images/logos/'+blog.team_file_name+".jpg", :height => 25, :alt => blog.team_name, :id => blog.team_file_name
       %td= blog.name
       %td= blog.url
